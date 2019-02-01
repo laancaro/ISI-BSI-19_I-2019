@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+function par_impar(){
+
+    var numero_entero = document.getElementById("texto").value;
+    var resultado;
+
+    if(numero_entero%2==0){
+
+        resultado="Es un valor par"
+    }else{
+
+        resultado="Es un valor impar"
+    }
+
+    console.log(resultado);
+
+}
+
+</script>
+
+
+
+<div>
+
+
+<input type="text" class="text_input" id="texto"/> <input type="button" value="calcular" id="Boton_calculo" onclick="par_impar()"/>
+
+
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head></head>
+<body>
+
+<script type="text/javascript">
+
+function calcular() {
+
+var numero_ingresado = document.getElementById('numero').value;
+var valor_final = isNaN(numero_ingresado);
+
+if (!valor_final) {
+    document.getElementById('dato_numero').innerHTML = numero_ingresado;
+    var final = 1;
+    
+    while(numero_ingresado >= 1) {
+        final = final * numero_ingresado;
+        numero_ingresado--;
+    }
+    
+    document.getElementById('valor_final').innerHTML = final;
+}
+}
+</script>
+
+
+<div>
+    <input type="text" class="text_input" id="numero"/> <input type="button" value="calcular" id="Boton_calculo" onclick="calcular()"/>
+    <div>
+    El factorial es de <span id="dato_numero"></span> es: <div id="valor_final"></div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+

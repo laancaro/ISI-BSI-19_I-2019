@@ -1,0 +1,50 @@
+
+<html>
+    <head></head>
+    <body>
+<script type="text/javascript">
+
+function Validar()
+{
+
+var palabra = document.getElementById("texto").value;
+ 
+ var valorMin = palabra.toLowerCase();
+ var valorMay = palabra.toUpperCase();
+ var resultado;
+
+if(palabra!=valorMin && palabra!=valorMay )
+{
+    resultado="La palabra tiene Mayusculas y Minusculas"
+
+} else if(palabra==valorMin && palabra!=valorMay){
+
+    resultado="La palabra solo tiene Minusculas"
+
+}else if(palabra!=valorMin && palabra==valorMay){
+
+resultado="La palabra solo tiene Mayusculas"
+
+}else{
+
+    resultado="La palabra no tiene Mayusculas y Minusculas"
+}
+
+document.getElementById('resultado_palabra').innerHTML = resultado;
+
+}
+
+
+</script>
+
+<div>
+    <input type="text" class="text_input" id="texto"/> <input type="button" value="calcular" id="Boton_calculo" onclick="Validar()"/>
+
+    El texto ingresado tiene </span> es: <div id="resultado_palabra"></div>
+
+</div>    
+
+
+    </body>
+
+</html>

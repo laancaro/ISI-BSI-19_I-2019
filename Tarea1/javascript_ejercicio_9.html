@@ -1,0 +1,47 @@
+
+<html>
+    <head></head>
+    <body>
+<script type="text/javascript">
+
+function Validar()
+{
+
+var palabra = document.getElementById("texto").value;
+ 
+palabra=palabra.toLowerCase();
+
+palabra_inversa=palabra.split("").reverse().toString();
+
+for (var i = 0; i < ((palabra_inversa.length)-1); i++) {
+    palabra_inversa=palabra_inversa.replace(",","");
+};
+
+if(palabra==palabra_inversa){
+
+resultado="es un Palindromo";
+}
+else{
+
+resultado="no es un Palindromo";
+}
+
+
+document.getElementById('resultado_palabra').innerHTML = resultado;
+
+}
+
+
+</script>
+
+<div>
+    <input type="text" class="text_input" id="texto"/> <input type="button" value="calcular" id="Boton_calculo" onclick="Validar()"/>
+
+    El texto ingresado tiene </span> es: <div id="resultado_palabra"></div>
+
+</div>    
+
+
+    </body>
+
+</html>
