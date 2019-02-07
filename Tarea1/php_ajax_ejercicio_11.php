@@ -28,9 +28,9 @@ function carga_parametros(ope) {
 
 <p><b>Calculadora:</b></p>
 <form> 
-Operador1: <input type="text" id="Operador1">
+Operador1: <input type="number" id="Operador1">
 <br><br>
-Operador2: <input type="text" id="Operador2">
+Operador2: <input type="number" id="Operador2">
 <br><br>
 <input type="button" value="suma" id="Boton_calculo" onclick="carga_parametros(this.value)"/>
 <input type="button" value="resta" id="Boton_calculo" onclick="carga_parametros(this.value)"/>
