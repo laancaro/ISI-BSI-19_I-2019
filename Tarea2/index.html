@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="FrmTarea" action="validaciones.php" method="POST">   
+
+
+Nombre: <input type="text" name="txtNombre" required pattern="^[A-Za-z]{1,25}\.[A-Za-z]{1,25}$"><br>
+Contraseña: <input type="Password" name="txtPass" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" ><br>
+Email: <input type="email" name="txtEmail"><br>
+Fecha: <input type="date" name="txtFecha" required><br>
+<input type="hidden" name="txtOculto" value="NULL"><br>
+<br>
+<input type="submit" name="btnAceptar" value="Aceptar">
+
+
+</form>
+
+</body>
+</html>
