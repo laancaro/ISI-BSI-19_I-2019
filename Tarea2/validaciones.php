@@ -1,6 +1,6 @@
-<<?php 
+<?php 
 
-print_r($_POST);
+
 
 
 if (preg_match("/^[A-Za-z]{1,25}\.[A-Za-z]{1,25}$/", $_POST['txtNombre'])) 
