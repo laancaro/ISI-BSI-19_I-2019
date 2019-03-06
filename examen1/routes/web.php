@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::resource('producto','ProductoController');
 Route::resource('trabajador','trabajadorController');
 Route::resource('cliente','clienteController');
+Route::resource('factura','facturaController');
 Auth::routes();
 
 

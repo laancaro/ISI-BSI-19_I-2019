@@ -28,26 +28,23 @@
         @method('PUT')
    
          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
+          
                 <div class="form-group">
                     <strong>Nombre:</strong>
                     <input type="text" name="nombre" value="{{ $producto->nombre }}" class="form-control" placeholder="Nombre">
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
+          
                 <div class="form-group">
                     <strong>Tipo:</strong>
                     <input type="number" name="tipo" value="{{ $producto->tipo }}" class="form-control" placeholder="Tipo">
                 </div>
-                </div>
-
-             <div class="col-xs-12 col-sm-12 col-md-12">
+      
                 <div class="form-group">
                     <strong>Descripcion:</strong>
                     <input type="text" name="descripcion" value="{{ $producto->descripcion }}" class="form-control" placeholder="descripcion">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
+          
                 <div class="form-group">
                     <strong>Costo Unitario:</strong>
                     <input type="number" name="costo_unitario" value="{{ $producto->costo_unitario }}" class="form-control" placeholder="Costo_unitario">

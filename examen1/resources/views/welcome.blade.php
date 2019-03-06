@@ -87,7 +87,8 @@
                 <div class="links">
                     <a href="../producto">producto</a>
                     <a href="../cliente">cliente</a>
-                    <a href="../trabajador">trabajador</a>                  
+                    <a href="../trabajador">trabajador</a> 
+                    <a href="../factura">factura</a>                  
                 </div>
             </div>
         </div>

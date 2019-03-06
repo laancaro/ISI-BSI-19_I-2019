@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Agrgar Nuevo Porducto</h2>
+            <h2>Agregar Nuevo Producto</h2>
         </div>
         <div class="pull-right">
             <a class="btn btn-primary" href="{{ route('producto.index') }}"> Back</a>
@@ -27,26 +27,24 @@
     @csrf
   
      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
+      
             <div class="form-group">
                 <strong>Nombre:</strong>
                 <input type="text" name="nombre" class="form-control" placeholder="Nombre">
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
+      
             <div class="form-group">
                 <strong>Tipo:</strong>
                 <input type="number" name="tipo" class="form-control" placeholder="tipo">
             </div>
 
 
-  <div class="col-xs-12 col-sm-12 col-md-12">
+
             <div class="form-group">
                 <strong>Descripcion:</strong>
                 <input type="text" name="descripcion" class="form-control" placeholder="Descripcion">
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
+      
             <div class="form-group">
                 <strong>Costo Unitario:</strong>
                 <input type="number" name="costo_unitario" class="form-control" placeholder="costo_unitario">
