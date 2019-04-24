@@ -1,0 +1,2 @@
+usr: admin@admin.com
+pass: admin123
